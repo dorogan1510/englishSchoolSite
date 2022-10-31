@@ -1,0 +1,16 @@
+footer {
+    padding: 0 5rem 3rem;
+    p {
+        @extend %p;
+        text-align: center;
+    }
+
+    .footer__email {
+        display: block;
+        text-align: center;
+
+        a {
+            color: $fc2;
+        }
+    }
+}
