@@ -126,7 +126,7 @@ footer p, .questions p, .offer p, .prices__flex_item-sign, .prices p, .team__mem
 
 header {
   height: 550px;
-  background-image: url(/images/clock-blue.png?7f93704ae3450f22f14288a9f2084342);
+  background: url(/images/bg.jpg?b04f5ebcb7c8945b650d500d8b6d5186);
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
