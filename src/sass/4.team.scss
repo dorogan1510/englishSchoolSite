@@ -7,14 +7,27 @@
     margin: -3rem 20px;
     padding: 10px;
 
+    &__description {
+        @extend %h3;
+        font-weight: 500;
+        color: $fc1;
+        max-width: 800px;
+        text-align: center;
+
+        margin: 0 auto 5rem;
+    }
+
     h2 {
         @extend %h2;
         text-align: center;
     }
 
     &__member {
+        &:last-child {
+            margin-bottom: 7rem;
+        }
         display: flex;
-        justify-content: space-between;
+        // justify-content: space-between;
         gap: 3rem;
 
         max-width: 1200px;
@@ -39,8 +52,13 @@
                 margin-bottom: 0;
             }
 
-            p {
+            ul {
+                font-weight: 700;
                 @extend %p;
+                li {
+                    list-style: inside;
+                    font-weight: $fwp;
+                }
             }
         }
 

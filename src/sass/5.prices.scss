@@ -4,22 +4,37 @@
     padding: 0 0 2rem;
 
     &__info {
-        height: 250px;
-        background-image: url('../img/bgprice.jpg');
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-attachment: fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
+        height: 200px;
+        // background-image: url('../img/bgprice.jpg');
+        // background-repeat: no-repeat;
+        // background-position: center center;
+        // background-attachment: fixed;
+        // -webkit-background-size: cover;
+        // -moz-background-size: cover;
+        // -o-background-size: cover;
+        // background-size: cover;
 
         margin-bottom: 2rem;
+
+        background-image: url('../img/bgprice.webp');
+        background-position: center;
     }
 
     h2 {
         @extend %h2;
         text-align: center;
+    }
+
+    h3 {
+        @extend %h3;
+        text-align: center;
+        color: $fc1;
+    }
+
+    &__h3 {
+        @extend %h3;
+        text-align: center;
+        color: $fc2 !important;
     }
 
     p {
@@ -32,52 +47,17 @@
         max-width: 300px;
     }
 
-    &__flex {
+    &__flex1 {
         display: flex;
         justify-content: center;
         gap: 1rem;
-        margin: -5rem 0 0;
+        margin: -5rem 0 3rem;
+    }
 
-        &_item {
-            max-width: 300px;
-
-            background-color: $fc3;
-            border-radius: 20px;
-
-            h3 {
-                @extend %h3;
-                color: $fc1;
-                padding: 2rem 0 0 2rem;
-                margin: 0;
-            }
-
-            h2 {
-                @extend %h2;
-                margin: 0 0 1rem;
-                padding: 0 0 0 2rem;
-                font-family: Roboto;
-
-                text-align: left;
-            }
-
-            &-sign {
-                @extend %p;
-                color: $fc1;
-                padding: 0 0 0 2rem;
-                margin-bottom: 1rem;
-            }
-
-            &-list {
-                display: flex;
-                align-items: center;
-
-                img {
-                    display: inline;
-
-                    width: 30px;
-                    height: 30px;
-                }
-            }
-        }
+    &__flex2 {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin-bottom: 3rem;
     }
 }

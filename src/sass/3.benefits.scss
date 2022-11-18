@@ -5,6 +5,14 @@
         text-align: center;
     }
 
+    &__description {
+        @extend %h3;
+        text-align: center;
+        font-weight: 500;
+
+        margin-bottom: 2rem;
+    }
+
     img {
         margin-bottom: 2rem;
     }

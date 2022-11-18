@@ -1,0 +1,36 @@
+.study {
+    margin-bottom: 3rem;
+
+    h2 {
+        @extend %h2;
+        color: $fc2;
+        text-align: center;
+    }
+
+    &__flex {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+
+        &-item {
+            width: 500px;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 15px -5px rgba(0, 0, 0, 0.1),
+                0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+            h3 {
+                @extend %h3;
+            }
+
+            ul {
+                @extend %p;
+
+                li {
+                    list-style: inside;
+                }
+            }
+        }
+    }
+}

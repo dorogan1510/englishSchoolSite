@@ -83,7 +83,7 @@ h6 {
 }
 
 /*--------------------*/
-.questions h2, .offer h2, .prices__flex_item h2, .prices h2, .team h2, .benefits h2, .polina__flex-right h2, .polina h2 {
+.questions h2, .reviews h2, .offer h2, .prices h2, .team h2, .benefits h2, .study h2, .polina__flex-right h2, .polina h2 {
   color: white;
   font-size: 30px;
   font-weight: 700;
@@ -92,16 +92,16 @@ h6 {
   padding: 2rem 0;
 }
 
-.questions summary, .offer__flex_right h3, .offer h3, .prices__flex_item h3, .team__member_right h3, .benefits__half h3, header h3 {
-  color: rgb(0, 0, 0);
+.questions summary, .reviews__flex-item h3, .offer__flex_right h3, .offer h3, .prices__h3, .prices h3, .team__member_right h3, .team__description, .benefits__half h3, .benefits__description, .study__flex-item h3, header h3 {
+  color: #344767;
   font-size: 20px;
   font-weight: 700;
   font-family: Roboto;
   margin-bottom: 1rem;
 }
 
-footer p, .questions p, .offer p, .prices__flex_item-sign, .prices p, .team__member_right p, .benefits__half p, .polina__flex-right ul, .polina__flex-right p {
-  color: rgb(0, 0, 0);
+footer p, .questions p, .reviews__flex-item ul, .reviews__flex-item p, .offer p, .prices p, .team__member_right ul, .benefits__half p, .study__flex-item ul, .polina__flex-right ul, .polina__flex-right p {
+  color: #344767;
   font-size: 16px;
   font-weight: 300;
   font-family: Roboto;
@@ -126,10 +126,7 @@ footer p, .questions p, .offer p, .prices__flex_item-sign, .prices p, .team__mem
 
 header {
   height: 550px;
-  background: url(/images/bg.jpg?b04f5ebcb7c8945b650d500d8b6d5186);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
+  background-image: url(/images/bg.webp?89e8401b8992b47bd8d8cb732fd8b475);
   background-size: cover;
 }
 header .header__main {
@@ -137,6 +134,7 @@ header .header__main {
 }
 header h1 {
   margin-bottom: 1.5rem;
+  max-width: 750px;
 }
 header h3 {
   color: white;
@@ -165,7 +163,7 @@ header a {
   margin-left: 3rem;
 }
 .polina__flex-right h2 {
-  color: rgb(0, 0, 0);
+  color: #344767;
   margin: 3rem 0 0;
   padding: 0;
 }
@@ -182,9 +180,37 @@ header a {
   margin-bottom: 2rem;
 }
 
-.benefits h2 {
-  color: rgb(0, 0, 0);
+.study {
+  margin-bottom: 3rem;
+}
+.study h2 {
+  color: #344767;
   text-align: center;
+}
+.study__flex {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.study__flex-item {
+  width: 500px;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 15px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+.study__flex-item ul li {
+  list-style: inside;
+}
+
+.benefits h2 {
+  color: #344767;
+  text-align: center;
+}
+.benefits__description {
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 2rem;
 }
 .benefits img {
   margin-bottom: 2rem;
@@ -206,17 +232,26 @@ header a {
   margin: -3rem 20px;
   padding: 10px;
 }
+.team__description {
+  font-weight: 500;
+  color: white;
+  max-width: 800px;
+  text-align: center;
+  margin: 0 auto 5rem;
+}
 .team h2 {
   text-align: center;
 }
 .team__member {
   display: flex;
-  justify-content: space-between;
   gap: 3rem;
   max-width: 1200px;
   margin: 0 auto 5rem;
   border-radius: 20px;
   background-color: white;
+}
+.team__member:last-child {
+  margin-bottom: 7rem;
 }
 .team__member img {
   width: 250px;
@@ -231,6 +266,13 @@ header a {
 .team__member_right h3 {
   margin-bottom: 0;
 }
+.team__member_right ul {
+  font-weight: 700;
+}
+.team__member_right ul li {
+  list-style: inside;
+  font-weight: 300;
+}
 .team__member_sign {
   color: #2d86ec !important;
   font-weight: 700 !important;
@@ -243,16 +285,21 @@ header a {
   padding: 0 0 2rem;
 }
 .prices__info {
-  height: 250px;
-  background-image: url(/images/bgprice.jpg?219120ed4a0101ee74fe90ac9923c9ca);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-  background-size: cover;
+  height: 200px;
   margin-bottom: 2rem;
+  background-image: url(/images/bgprice.webp?d69534f7a7b5a33efff3978e183f84b2);
+  background-position: center;
 }
 .prices h2 {
   text-align: center;
+}
+.prices h3 {
+  text-align: center;
+  color: white;
+}
+.prices__h3 {
+  text-align: center;
+  color: #344767 !important;
 }
 .prices p {
   color: white;
@@ -261,41 +308,17 @@ header a {
 .prices img {
   max-width: 300px;
 }
-.prices__flex {
+.prices__flex1 {
   display: flex;
   justify-content: center;
   gap: 1rem;
-  margin: -5rem 0 0;
+  margin: -5rem 0 3rem;
 }
-.prices__flex_item {
-  max-width: 300px;
-  background-color: #2d86ec;
-  border-radius: 20px;
-}
-.prices__flex_item h3 {
-  color: white;
-  padding: 2rem 0 0 2rem;
-  margin: 0;
-}
-.prices__flex_item h2 {
-  margin: 0 0 1rem;
-  padding: 0 0 0 2rem;
-  font-family: Roboto;
-  text-align: left;
-}
-.prices__flex_item-sign {
-  color: white;
-  padding: 0 0 0 2rem;
-  margin-bottom: 1rem;
-}
-.prices__flex_item-list {
+.prices__flex2 {
   display: flex;
-  align-items: center;
-}
-.prices__flex_item-list img {
-  display: inline;
-  width: 30px;
-  height: 30px;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
 }
 
 .offer {
@@ -353,13 +376,60 @@ header a {
   display: inline-block;
   font-size: 16px;
 }
+.offer__flex_right a:hover {
+  box-shadow: 0px 14px 34px -11px rgba(219, 236, 255, 0.8);
+  transition: 0.3s;
+}
+
+.reviews {
+  margin: 0 20px;
+  padding: 0 0 2rem;
+  background: linear-gradient(90deg, rgb(48, 48, 52) 0%, rgb(64, 64, 71) 100%);
+}
+.reviews h2 {
+  text-align: center;
+}
+.reviews__flex {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+.reviews__flex-item {
+  background-color: white;
+  width: 33%;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.2);
+}
+.reviews__flex-item p {
+  margin-bottom: 2rem;
+}
+.reviews__flex-item ul {
+  margin-bottom: 1rem;
+  color: #2d86ec;
+  font-weight: 700;
+}
+.reviews__flex-item ul li {
+  color: #344767;
+  font-weight: 300;
+}
+.reviews__flex-item img {
+  width: 300px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 20px;
+  box-shadow: 0 10px 15px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
 
 .questions {
   margin: 0 20px 3rem;
   padding: 2rem;
 }
 .questions h2 {
-  color: rgb(0, 0, 0);
+  color: #344767;
   text-align: center;
 }
 .questions details {
@@ -439,7 +509,7 @@ footer .footer__email {
   text-align: center;
 }
 footer .footer__email a {
-  color: rgb(0, 0, 0);
+  color: #344767;
 }
 
 html {

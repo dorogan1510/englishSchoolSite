@@ -1,13 +1,16 @@
 header {
     height: 550px;
 
-    background: url('../img/bg.jpg');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    // background: url('../img/bg.jpg');
+    // background-repeat: no-repeat;
+    // background-position: center center;
+    // background-attachment: fixed;
+    // -webkit-background-size: cover;
+    // -moz-background-size: cover;
+    // -o-background-size: cover;
+    // background-size: cover;
+
+    background-image: url('../img/bg.webp');
     background-size: cover;
 
     .header__main {
@@ -16,6 +19,7 @@ header {
 
     h1 {
         margin-bottom: 1.5rem;
+        max-width: 750px;
     }
 
     h3 {

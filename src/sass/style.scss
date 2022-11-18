@@ -78,7 +78,7 @@ h6 {
 
 // colors
 $fc1: white;
-$fc2: rgb(0, 0, 0);
+$fc2: #344767;
 $fc3: #2d86ec;
 
 // for h2
@@ -149,10 +149,12 @@ $fwbtn: 700;
 
 @import '1.header';
 @import '2.polina';
+@import '3.study';
 @import '3.benefits';
 @import '4.team';
 @import '5.prices';
 @import '6.offer';
+@import '6.reviews';
 @import '7.questions';
 @import '8.footer';
 

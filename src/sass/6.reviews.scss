@@ -1,0 +1,62 @@
+.reviews {
+    margin: 0 20px;
+    padding: 0 0 2rem;
+    background: linear-gradient(
+        90deg,
+        rgba(48, 48, 52, 1) 0%,
+        rgba(64, 64, 71, 1) 100%
+    );
+    h2 {
+        @extend %h2;
+        text-align: center;
+    }
+
+    &__flex {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        margin-bottom: 3rem;
+
+        &-item {
+            background-color: $fc1;
+            width: 33%;
+            padding: 2rem;
+            border-radius: 20px;
+            -webkit-box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.2);
+            -moz-box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.2);
+            box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.2);
+
+            h3 {
+                @extend %h3;
+            }
+
+            p {
+                @extend %p;
+                margin-bottom: 2rem;
+            }
+
+            ul {
+                margin-bottom: 1rem;
+                @extend %p;
+                color: $fc3;
+                font-weight: 700;
+                li {
+                    color: $fc2;
+                    font-weight: 300;
+                }
+            }
+
+            img {
+                width: 300px;
+                height: auto;
+                display: block;
+                margin: 0 auto;
+
+                border-radius: 20px;
+                box-shadow: 0 10px 15px -5px rgba(0, 0, 0, 0.1),
+                    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            }
+        }
+    }
+}
