@@ -92,7 +92,7 @@ h6 {
   padding: 2rem 0;
 }
 
-.questions summary, .reviews__flex-item h3, .offer__flex_right h3, .offer h3, .prices__h3, .prices h3, .team__member_right h3, .team__description, .benefits__half h3, .benefits__description, .study__flex-item h3, header h3 {
+.questions summary, .reviews__flex-item h3, .offer__flex_right h3, .offer h3, .team__member_right h3, .team__description, .benefits__half h3, .benefits__description, .study__flex-item h3, header h3 {
   color: #344767;
   font-size: 20px;
   font-weight: 700;
@@ -126,7 +126,10 @@ footer p, .questions p, .reviews__flex-item ul, .reviews__flex-item p, .offer p,
 
 header {
   height: 550px;
-  background-image: url("/images/bg.webp");
+  background-image: url(/images/bg.jpg?b04f5ebcb7c8945b650d500d8b6d5186);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
   background-size: cover;
 }
 header .header__main {
@@ -284,22 +287,25 @@ header a {
   background: white;
   padding: 0 0 2rem;
 }
-.prices__info {
-  height: 200px;
-  margin-bottom: 2rem;
-  background-image: url("/img/bgprice.webp");
-  background-position: center;
-}
 .prices h2 {
   text-align: center;
 }
-.prices h3 {
-  text-align: center;
-  color: white;
+.prices__info {
+  height: 150px;
+  background-image: url(/images/bgprice.jpg?219120ed4a0101ee74fe90ac9923c9ca);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  margin-bottom: 2rem;
 }
-.prices__h3 {
-  text-align: center;
-  color: #344767 !important;
+.prices__group {
+  height: 150px;
+  background-image: url(/images/nastya.jpg?61115820a6f3c116daaa1af6c76d8dc6);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
 }
 .prices p {
   color: white;
@@ -307,18 +313,18 @@ header a {
 }
 .prices img {
   max-width: 300px;
+  margin: -3rem 0 0;
 }
 .prices__flex1 {
   display: flex;
   justify-content: center;
   gap: 1rem;
-  margin: -5rem 0 3rem;
+  margin: -2rem 0 3rem;
 }
 .prices__flex2 {
   display: flex;
   justify-content: center;
   gap: 1rem;
-  margin-bottom: 3rem;
 }
 
 .offer {

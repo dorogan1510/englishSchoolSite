@@ -3,38 +3,38 @@
     background: white;
     padding: 0 0 2rem;
 
-    &__info {
-        height: 200px;
-        // background-image: url('../img/bgprice.jpg');
-        // background-repeat: no-repeat;
-        // background-position: center center;
-        // background-attachment: fixed;
-        // -webkit-background-size: cover;
-        // -moz-background-size: cover;
-        // -o-background-size: cover;
-        // background-size: cover;
-
-        margin-bottom: 2rem;
-
-        background-image: url('/img/bgprice.webp');
-        background-position: center;
-    }
-
     h2 {
         @extend %h2;
         text-align: center;
     }
 
-    h3 {
-        @extend %h3;
-        text-align: center;
-        color: $fc1;
+    &__info {
+        height: 150px;
+        background-image: url('../img/bgprice.jpg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+
+        margin-bottom: 2rem;
+
+        // background-image: url('../img/bgprice.webp');
+        // background-position: center;
     }
 
-    &__h3 {
-        @extend %h3;
-        text-align: center;
-        color: $fc2 !important;
+    &__group {
+        height: 150px;
+        background-image: url('../img/nastya.jpg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
     }
 
     p {
@@ -45,19 +45,19 @@
 
     img {
         max-width: 300px;
+        margin: -3rem 0 0;
     }
 
     &__flex1 {
         display: flex;
         justify-content: center;
         gap: 1rem;
-        margin: -5rem 0 3rem;
+        margin: -2rem 0 3rem;
     }
 
     &__flex2 {
         display: flex;
         justify-content: center;
         gap: 1rem;
-        margin-bottom: 3rem;
     }
 }

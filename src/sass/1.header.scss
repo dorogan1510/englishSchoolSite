@@ -1,17 +1,17 @@
 header {
     height: 550px;
 
-    // background: url('../img/bg.jpg');
-    // background-repeat: no-repeat;
-    // background-position: center center;
-    // background-attachment: fixed;
-    // -webkit-background-size: cover;
-    // -moz-background-size: cover;
-    // -o-background-size: cover;
-    // background-size: cover;
-
-    background-image: url('/images/bg.webp');
+    background-image: url('../img/bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
+
+    // background-image: url('/images/bg.webp');
+    // background-size: cover;
 
     .header__main {
         padding: 8rem 15% 0;
