@@ -10,7 +10,8 @@
 
     &__info {
         height: 150px;
-        background-image: url('/src/img/bgprice.webp');
+        width: 100%;
+        background-image: url('../img/bgprice.webp');
         background-repeat: no-repeat;
         background-position: center center;
         background-attachment: fixed;
@@ -20,14 +21,13 @@
         background-size: cover;
 
         margin-bottom: 2rem;
-
-        // background-image: url('../img/bgprice.webp');
-        // background-position: center;
     }
 
     &__group {
         height: 150px;
-        background-image: url('/src/img/bgprice2.jpg');
+        width: 100%;
+
+        background-image: url('../img/bgprice2.webp');
         background-repeat: no-repeat;
         background-position: center center;
         background-attachment: fixed;

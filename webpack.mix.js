@@ -1,7 +1,8 @@
 let mix = require('laravel-mix')
 
-mix.js('src/index.js', './')
-mix.sass('src/sass/style.scss', './').options({
+mix.js('src/js/index.js', 'public/js')
+
+mix.sass('src/sass/style.scss', 'src/css').options({
     processCssUrls: false,
 })
 
