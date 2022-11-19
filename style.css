@@ -126,7 +126,7 @@ footer p, .questions p, .reviews__flex-item ul, .reviews__flex-item p, .offer p,
 
 header {
   height: 550px;
-  background-image: url("../../src/img/bg.jpg");
+  background-image: url("/src/img/bg.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
@@ -299,7 +299,7 @@ header a {
 }
 .prices__info {
   height: 150px;
-  background-image: url("../../src/img/bgprice.webp");
+  background-image: url("/src/img/bgprice.webp");
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
@@ -308,7 +308,7 @@ header a {
 }
 .prices__group {
   height: 150px;
-  background-image: url("../../src/img/bgprice2.jpg");
+  background-image: url("/src/img/bgprice2.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
