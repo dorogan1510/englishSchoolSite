@@ -243,11 +243,20 @@ header a {
   text-align: center;
   margin: 0 auto 5rem;
 }
+.team__polina_a {
+  margin: auto 2rem auto 0;
+}
+.team__btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto 2rem auto 0;
+  gap: 2rem;
+}
 .team h2 {
   text-align: center;
 }
 .team a {
-  margin: auto 2rem auto 0;
   text-align: center;
 }
 .team__member {
