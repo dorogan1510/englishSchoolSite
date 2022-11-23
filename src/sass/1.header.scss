@@ -1,5 +1,5 @@
 header {
-    height: 550px;
+    height: 80vh;
     width: 100%;
 
     background-image: url('../img/bg.webp');
@@ -10,6 +10,12 @@ header {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+
+    .header__links {
+        display: flex;
+        justify-content: left;
+        gap: 2rem;
+    }
 
     .header__main {
         padding: 8rem 15% 0;
@@ -30,24 +36,19 @@ header {
 
     a {
         @extend %btn;
-
-        margin-right: 2rem;
-        margin-bottom: 1rem;
     }
 }
 
 @media (max-width: 760px) {
     header {
-        height: 100vh;
+        height: 90vh;
         .header {
             &__main {
                 padding: 8rem 10%;
             }
             &__links {
-                text-align: center;
-                a {
-                    margin: 0 0 1rem 0;
-                }
+                flex-direction: column;
+                max-width: 250px;
             }
         }
     }
