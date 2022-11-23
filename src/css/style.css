@@ -332,6 +332,9 @@ header h3 {
   .team__member img {
     margin: -3rem auto 0;
   }
+  .team__member ul {
+    text-align: left;
+  }
   .team__polina_a {
     margin: 0 auto 1rem;
   }
