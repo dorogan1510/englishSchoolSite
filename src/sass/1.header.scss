@@ -32,5 +32,23 @@ header {
         @extend %btn;
 
         margin-right: 2rem;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 760px) {
+    header {
+        height: 100vh;
+        .header {
+            &__main {
+                padding: 8rem 10%;
+            }
+            &__links {
+                text-align: center;
+                a {
+                    margin: 0 0 1rem 0;
+                }
+            }
+        }
     }
 }

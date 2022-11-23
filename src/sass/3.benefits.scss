@@ -36,7 +36,17 @@
 
         &_1 {
             max-width: 550px;
+            min-height: 210px;
             margin-bottom: 3rem;
+        }
+    }
+}
+
+@media (max-width: 760px) {
+    .benefits {
+        &__flex {
+            flex-direction: column;
+            gap: 0;
         }
     }
 }

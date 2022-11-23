@@ -61,3 +61,39 @@
         gap: 1rem;
     }
 }
+
+@media (max-width: 760px) {
+}
+.prices {
+    &__flex1 {
+        flex-direction: column;
+        align-items: center;
+        img {
+            margin: -2rem 0 0;
+
+            &:first-child {
+                margin-bottom: 2rem;
+            }
+        }
+    }
+
+    &__flex2 {
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            margin: -2rem 0 0;
+
+            &:first-child {
+                margin-bottom: 2rem;
+            }
+        }
+    }
+
+    &__info {
+        height: 200px;
+    }
+    &__group {
+        height: 200px;
+    }
+}

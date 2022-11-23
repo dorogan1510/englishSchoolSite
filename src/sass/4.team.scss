@@ -5,7 +5,7 @@
         rgba(64, 64, 71, 1) 100%
     );
     margin: -3rem 20px;
-    padding: 10px;
+    padding: 1rem;
 
     &__description {
         @extend %h3;
@@ -87,6 +87,33 @@
             color: $fc3 !important;
             font-weight: 700 !important;
             margin-bottom: 1rem;
+        }
+    }
+}
+
+@media (max-width: 760px) {
+    .team {
+        &__member {
+            flex-direction: column;
+            max-width: 400px;
+            text-align: center;
+
+            &_right {
+                padding: 0 1rem;
+            }
+
+            img {
+                margin: -3rem auto 0;
+            }
+        }
+
+        &__polina_a {
+            margin: 0 auto 1rem;
+        }
+
+        &__btn {
+            margin: 0 auto 1rem;
+            gap: 1rem;
         }
     }
 }

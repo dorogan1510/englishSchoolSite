@@ -107,7 +107,6 @@ $fwbtn: 700;
     font-weight: $fwh2;
     font-family: $ffh2;
 
-    margin: 0 3rem;
     padding: 2rem 0;
 }
 
@@ -128,6 +127,7 @@ $fwbtn: 700;
 }
 
 %btn {
+    display: inline-block;
     color: $fc1;
     font-size: $fsbtn;
     font-weight: $fwbtn;
@@ -137,6 +137,7 @@ $fwbtn: 700;
     padding: 1rem 1.5rem;
     border: 0;
     text-transform: uppercase;
+    text-align: center;
     transition: 0.3s;
 
     &:hover {
@@ -182,9 +183,19 @@ main {
     background-color: #fcfcfd;
     margin: -3rem 20px -3rem;
     border-radius: 20px;
-    padding: 10px;
+    padding: 1rem;
 }
 
 .page {
     padding-bottom: 3rem;
+}
+
+@media (max-width: 760px) {
+    h1 {
+        font-family: Roboto Slab;
+        font-weight: 700;
+        font-size: 30px;
+
+        color: $fc1;
+    }
 }
