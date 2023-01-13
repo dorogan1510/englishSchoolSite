@@ -151,8 +151,7 @@ $fwbtn: 700;
 }
 
 @import '1.header';
-@import '2.polina';
-@import '3.study';
+@import '2.study';
 @import '3.benefits';
 @import '4.team';
 @import '5.prices';
@@ -181,21 +180,35 @@ h1 {
 
 main {
     background-color: #fcfcfd;
-    margin: -3rem 20px -3rem;
+    margin: 0 1rem;
     border-radius: 20px;
-    padding: 1rem;
 }
 
 .page {
+    margin: 0 auto;
+    max-width: 1920px;
+
     padding-bottom: 3rem;
 }
 
 @media (max-width: 760px) {
+    main {
+        margin: 0 0.5rem;
+    }
+
     h1 {
         font-family: Roboto Slab;
         font-weight: 700;
-        font-size: 30px;
+        font-size: 26px;
 
         color: $fc1;
+    }
+
+    %h2 {
+        font-size: 26px;
+    }
+
+    %h3 {
+        font-size: 18px;
     }
 }

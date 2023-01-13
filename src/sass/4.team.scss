@@ -4,7 +4,6 @@
         rgba(48, 48, 52, 1) 0%,
         rgba(64, 64, 71, 1) 100%
     );
-    margin: -3rem 20px;
     padding: 1rem;
 
     &__description {
@@ -37,7 +36,6 @@
     a {
         @extend %btn;
 
-        // margin-bottom: 2rem;
         text-align: center;
     }
 
@@ -93,6 +91,8 @@
 
 @media (max-width: 760px) {
     .team {
+        padding: 0.5rem;
+
         &__member {
             flex-direction: column;
             max-width: 400px;

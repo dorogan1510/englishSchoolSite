@@ -83,7 +83,7 @@ h6 {
 }
 
 /*--------------------*/
-.questions h2, .reviews h2, .offer h2, .prices h2, .team h2, .benefits h2, .study h2, .polina__flex-right h2, .polina h2 {
+.questions h2, .reviews h2, .offer h2, .prices h2, .team h2, .benefits h2, .study h2 {
   color: white;
   font-size: 30px;
   font-weight: 700;
@@ -99,7 +99,7 @@ h6 {
   margin-bottom: 1rem;
 }
 
-footer p, .questions p, .reviews__flex-item ul, .reviews__flex-item p, .offer p, .prices p, .team__member_right ul, .benefits__half p, .study__flex-item ul, .polina__flex-right ul, .polina__flex-right p {
+footer p, .questions p, .reviews__flex-item ul, .reviews__flex-item p, .offer p, .prices p, .team__member_right ul, .benefits__half p, .study__flex-item ul {
   color: #344767;
   font-size: 16px;
   font-weight: 300;
@@ -126,7 +126,6 @@ footer p, .questions p, .reviews__flex-item ul, .reviews__flex-item p, .offer p,
 }
 
 header {
-  height: 80vh;
   width: 100%;
   background-image: url("../img/bg.webp");
   background-repeat: no-repeat;
@@ -140,7 +139,7 @@ header .header__links {
   gap: 2rem;
 }
 header .header__main {
-  padding: 8rem 15% 0;
+  padding: 8rem 15%;
 }
 header h1 {
   margin-bottom: 1.5rem;
@@ -153,9 +152,6 @@ header h3 {
   max-width: 700px;
 }
 @media (max-width: 760px) {
-  header {
-    height: 90vh;
-  }
   header .header__main {
     padding: 8rem 10%;
   }
@@ -163,42 +159,12 @@ header h3 {
     flex-direction: column;
     max-width: 250px;
   }
+  header h3 {
+    font-size: 18px;
+  }
 }
-.polina {
-  margin-bottom: 3rem;
-}
-.polina__flex {
-  padding: 2rem;
-  display: flex;
-  justify-content: center;
-}
-.polina__flex img {
-  max-width: 435px;
-  max-height: 580px;
-  border-radius: 20px;
-}
-.polina__flex-right {
-  margin-left: 3rem;
-}
-.polina__flex-right h2 {
-  color: #344767;
-  margin: 3rem 0 0;
-  padding: 0;
-}
-.polina__flex-right p {
-  margin-bottom: 2rem;
-  color: #2d86ec;
-  font-weight: 700;
-}
-.polina__flex-right ul {
-  max-width: 615px;
-}
-.polina__flex-right li {
-  list-style: inside;
-  margin-bottom: 2rem;
-}
-
 .study {
+  padding: 0 1rem;
   margin-bottom: 3rem;
 }
 .study h2 {
@@ -221,6 +187,15 @@ header h3 {
   list-style: inside;
 }
 
+@media (max-width: 760px) {
+  .study {
+    padding: 0 0.5rem;
+  }
+}
+.benefits {
+  padding: 0 1rem;
+  margin-bottom: 3rem;
+}
 .benefits h2 {
   color: #344767;
   text-align: center;
@@ -237,8 +212,6 @@ header h3 {
   display: flex;
   justify-content: center;
   gap: 4rem;
-  margin-bottom: 3rem;
-  padding: 1rem;
 }
 .benefits__half_1 {
   max-width: 550px;
@@ -247,14 +220,21 @@ header h3 {
 }
 
 @media (max-width: 760px) {
+  .benefits {
+    padding: 0 0.5rem;
+  }
   .benefits__flex {
     flex-direction: column;
     gap: 0;
   }
+  .benefits__description {
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 2rem;
+  }
 }
 .team {
   background: linear-gradient(90deg, rgb(48, 48, 52) 0%, rgb(64, 64, 71) 100%);
-  margin: -3rem 20px;
   padding: 1rem;
 }
 .team__description {
@@ -321,6 +301,9 @@ header h3 {
 }
 
 @media (max-width: 760px) {
+  .team {
+    padding: 0.5rem;
+  }
   .team__member {
     flex-direction: column;
     max-width: 400px;
@@ -344,7 +327,6 @@ header h3 {
   }
 }
 .prices {
-  margin: 0 20px;
   background: white;
   padding: 0 0 2rem;
 }
@@ -390,38 +372,38 @@ header h3 {
   gap: 1rem;
 }
 
-.prices__flex1 {
-  flex-direction: column;
-  align-items: center;
+@media (max-width: 760px) {
+  .prices__flex1 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .prices__flex1 img {
+    margin: -2rem 0 0;
+  }
+  .prices__flex1 img:first-child {
+    margin-bottom: 2rem;
+  }
+  .prices__flex2 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .prices__flex2 img {
+    margin: -2rem 0 0;
+  }
+  .prices__flex2 img:first-child {
+    margin-bottom: 2rem;
+  }
+  .prices__info {
+    height: 200px;
+  }
+  .prices__group {
+    height: 200px;
+  }
 }
-.prices__flex1 img {
-  margin: -2rem 0 0;
-}
-.prices__flex1 img:first-child {
-  margin-bottom: 2rem;
-}
-.prices__flex2 {
-  flex-direction: column;
-  align-items: center;
-}
-.prices__flex2 img {
-  margin: -2rem 0 0;
-}
-.prices__flex2 img:first-child {
-  margin-bottom: 2rem;
-}
-.prices__info {
-  height: 200px;
-}
-.prices__group {
-  height: 200px;
-}
-
 .offer {
-  margin: 0 20px;
   background: #2d86ec;
   border-radius: 0 0 20px 20px;
-  padding: 0 0 2rem;
+  padding: 0 1rem 2rem;
 }
 .offer h2 {
   padding: 3rem 0 0;
@@ -435,7 +417,6 @@ header h3 {
   color: white;
 }
 .offer__flex {
-  margin: 0 3rem;
   display: flex;
   justify-content: space-around;
   color: white;
@@ -479,6 +460,7 @@ header h3 {
 
 @media (max-width: 760px) {
   .offer {
+    padding: 0 0.5rem 2rem;
     text-align: center;
   }
   .offer__flex {
@@ -495,8 +477,7 @@ header h3 {
   }
 }
 .reviews {
-  margin: 0 20px;
-  padding: 0 0 2rem;
+  padding: 0 1rem 3rem;
   background: linear-gradient(90deg, rgb(48, 48, 52) 0%, rgb(64, 64, 71) 100%);
 }
 .reviews h2 {
@@ -510,7 +491,8 @@ header h3 {
 }
 .reviews__flex-item {
   background-color: white;
-  width: 33%;
+  width: 45%;
+  max-width: 500px;
   padding: 2rem;
   border-radius: 20px;
   box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.2);
@@ -538,6 +520,9 @@ header h3 {
 }
 
 @media (max-width: 760px) {
+  .reviews {
+    padding: 0 0.5rem 2rem;
+  }
   .reviews__flex {
     flex-direction: column;
   }
@@ -652,20 +637,30 @@ h1 {
 
 main {
   background-color: #fcfcfd;
-  margin: -3rem 20px -3rem;
+  margin: 0 1rem;
   border-radius: 20px;
-  padding: 1rem;
 }
 
 .page {
+  margin: 0 auto;
+  max-width: 1920px;
   padding-bottom: 3rem;
 }
 
 @media (max-width: 760px) {
+  main {
+    margin: 0 0.5rem;
+  }
   h1 {
     font-family: Roboto Slab;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 26px;
     color: white;
+  }
+  .study h2, .benefits h2, .team h2, .prices h2, .offer h2, .reviews h2, .questions h2 {
+    font-size: 26px;
+  }
+  header h3, .study__flex-item h3, .benefits__description, .benefits__half h3, .team__description, .team__member_right h3, .offer h3, .offer__flex_right h3, .reviews__flex-item h3, .questions summary {
+    font-size: 18px;
   }
 }

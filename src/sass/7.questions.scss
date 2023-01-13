@@ -1,7 +1,4 @@
 .questions {
-    // background-color: $fc1;
-    // border-radius: 0 0 20px 20px;
-
     margin: 0 20px 3rem;
 
     padding: 2rem;
@@ -48,7 +45,6 @@
         top: 0.4em;
         right: 0.3em;
         color: transparent;
-        // background: url('../img/down-arrow.png') no-repeat 50% 50% / 1em 1em;
         width: 1em;
         height: 1em;
         content: '';
@@ -87,7 +83,6 @@
 
         summary {
             font-weight: 600;
-            // font-size: $mfsp;
         }
     }
 }

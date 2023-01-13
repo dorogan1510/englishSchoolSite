@@ -1,6 +1,5 @@
 .reviews {
-    margin: 0 20px;
-    padding: 0 0 2rem;
+    padding: 0 1rem 3rem;
     background: linear-gradient(
         90deg,
         rgba(48, 48, 52, 1) 0%,
@@ -19,7 +18,8 @@
 
         &-item {
             background-color: $fc1;
-            width: 33%;
+            width: 45%;
+            max-width: 500px;
             padding: 2rem;
             border-radius: 20px;
             -webkit-box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.2);
@@ -63,6 +63,8 @@
 
 @media (max-width: 760px) {
     .reviews {
+        padding: 0 0.5rem 2rem;
+
         &__flex {
             flex-direction: column;
 

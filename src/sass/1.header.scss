@@ -1,5 +1,4 @@
 header {
-    height: 80vh;
     width: 100%;
 
     background-image: url('../img/bg.webp');
@@ -18,7 +17,7 @@ header {
     }
 
     .header__main {
-        padding: 8rem 15% 0;
+        padding: 8rem 15%;
     }
 
     h1 {
@@ -41,7 +40,6 @@ header {
 
 @media (max-width: 760px) {
     header {
-        height: 90vh;
         .header {
             &__main {
                 padding: 8rem 10%;
@@ -50,6 +48,10 @@ header {
                 flex-direction: column;
                 max-width: 250px;
             }
+        }
+
+        h3 {
+            font-size: 18px;
         }
     }
 }
